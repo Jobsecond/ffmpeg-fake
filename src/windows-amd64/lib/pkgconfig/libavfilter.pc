@@ -5,9 +5,9 @@ includedir=ffbuild/release/include
 
 Name: libavfilter
 Description: FFmpeg audio/video filtering library
-Version: 8.56.100
+Version: 8.44.100
 Requires: 
-Requires.private: libavutil >= 57.44.100
+Requires.private: libavutil >= 57.28.100
 Conflicts:
 Libs: -L${libdir} -Wl,-rpath,ffbuild/release/lib -lavfilter 
 Libs.private: 
