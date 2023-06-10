@@ -5,10 +5,10 @@ includedir=ffbuild/debug/include
 
 Name: libavutil
 Description: FFmpeg utility library
-Version: 57.28.100
+Version: 58.2.100
 Requires: 
 Requires.private: 
 Conflicts:
-Libs: -L${libdir}  -lavutil 
-Libs.private: -pthread -lm -framework VideoToolbox -L/opt/homebrew/Cellar/libx11/1.8.1/lib -lX11 -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs: -L${libdir} -Wl,-rpath,ffbuild/debug/lib -lavutil 
+Libs.private: -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
 Cflags: -I${includedir}
